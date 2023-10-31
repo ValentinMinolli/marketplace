@@ -5,11 +5,17 @@ from . import views
 from .forms import LoginForm
 
 
-app_name = 'core'
+app_name = "core"
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('contact/', views.contact, name='contact'),
-    path('signup/', views.sign_up, name='singup'),
-    path('login/', auth_views.LoginView.as_view(template_name='core/login.html', authentication_form=LoginForm), name='login'),
+    path("", views.index, name="index"),
+    path("contact/", views.contact, name="contact"),
+    path("signup/", views.sign_up, name="signup"),
+    path(
+        "login/",
+        auth_views.LoginView.as_view(
+            template_name="core/login.html", authentication_form=LoginForm
+        ),
+        name="login",
+    ),
 ]
