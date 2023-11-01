@@ -23,7 +23,6 @@ def contact(request):
     return render(request, "core/contact.html")
 
 
-@require_POST
 def sign_up(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
