@@ -32,13 +32,13 @@
         <div class="w-2/3 pr-10">
             <h3 class="mb-5 font-semibold text-gray-400">Sobre</h3>
 
-            <p class="text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aperiam recusandae fugiat natus neque facere necessitatibus quis quia nisi incidunt amet dolorem dicta, nesciunt animi deserunt, suscipit inventore, voluptas perspiciatis.</p>
+            <p class="text-lg text-gray-500">Esta página web es el resultado de un curso de programación web con Python Django... tus datos permanecerán privados, no se puede comprar en esta página. Se puede simular la búsqueda de items por catálogo y la creación de los mismos, entre otras cosas... Para más información, chequear la secciób "Sobre".</p>
         </div>
         <div class="w-1/3">
             <h3 class="mb-5 font-semibold text-gray-400">Menú</h3>
 
             <ul class="space-y-2">
-                <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">About</a></li>
+                <li><a href="{% url 'core:about' %}" class="text-lg text-teal-500 hover:text-teal-700">About</a></li>
                 <li><a href="{% url 'core:contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contacto</a></li>
                 <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Política de Privacidad</a></li>
                 <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Términos de Uso</a></li>
