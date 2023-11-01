@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.views.decorators.http import require_POST
 
 from item.models import Category, Item
 
@@ -22,6 +23,7 @@ def contact(request):
     return render(request, "core/contact.html")
 
 
+@require_POST
 def sign_up(request):
     if request.method == "POST":
         form = SignUpForm(request.POST)
