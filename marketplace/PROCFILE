@@ -1,1 +1,1 @@
-web: gunicorn marketplace.wsgi --log-file -
+web: python manage.py migrate && gunicorn marketplace.wsgi --log-file -
