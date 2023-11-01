@@ -7,7 +7,7 @@ class LoginForm(AuthenticationForm):
     username = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                "placeholder": "Your username.",
+                "placeholder": "El nombre de tu usuario.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
@@ -16,7 +16,7 @@ class LoginForm(AuthenticationForm):
     password = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Your password.",
+                "placeholder": "Tu contraseña.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
@@ -31,7 +31,7 @@ class SignUpForm(UserCreationForm):
     username = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                "placeholder": "Your username.",
+                "placeholder": "El nombre de tu usuario.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
@@ -39,7 +39,7 @@ class SignUpForm(UserCreationForm):
     email = forms.CharField(
         widget=forms.EmailInput(
             attrs={
-                "placeholder": "Your email address.",
+                "placeholder": "Tu correo electrónico.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
@@ -47,7 +47,7 @@ class SignUpForm(UserCreationForm):
     password1 = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Your password.",
+                "placeholder": "Tu contraseña.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
@@ -55,7 +55,7 @@ class SignUpForm(UserCreationForm):
     password2 = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                "placeholder": "Repeat password.",
+                "placeholder": "Repite tu contraseña.",
                 "class": "w-full px-6 py-4 rounded-xl ",
             }
         )
